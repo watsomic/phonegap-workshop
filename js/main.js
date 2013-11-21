@@ -22,11 +22,8 @@ var app = {
 },
 
     initialize: function() {
-	var self = this;
-        this.store = new MemoryStore(function() {
-	self.showAlert('Store initalized', 'Info');
-	});
-        $('.search-key').on('keyup', $.proxy(this.findByName, this));
+        this.store = new MemoryStore();
+	$('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
 
 
