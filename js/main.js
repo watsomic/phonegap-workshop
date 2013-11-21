@@ -27,7 +27,7 @@ var app = {
 	self.showAlert('Store initalized', 'Info');
 	});
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
-    }/
+    }
 
 
 };
